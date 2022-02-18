@@ -21,6 +21,9 @@
     color: #999999;
     margin: 0;
     text-align: center;
+    @include media-breakpoint-down(sm) {
+      padding: 15px 15px;
+    }
   }
   &-img {
     margin: 0 auto;
@@ -111,25 +114,14 @@
     color: #999999;
     text-align: center;
     margin: 0;
+    @include media-breakpoint-down(sm) {
+      padding: 15px 20px 0 19px;
+    }
   }
 }
-
-.slick-dots {
-  bottom: -16px;
-  li {
-      list-style: none;
-      border-radius: 50%;
-      font-size: 0;
-      width: 7px;
-      height: 7px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      margin: 0px -2px -6px 24px;
-      color:#1a1a1a;
-      &.slick-active {
-          background-color: $white;
-          width: 12px;
-          height: 12px;
-          transition: 0.3s;
-      }
+.slick-dotted.slick-slider {
+  @include media-breakpoint-down(md) {
+    margin-bottom: 42px;
+    margin-right: 3px;
   }
 }
