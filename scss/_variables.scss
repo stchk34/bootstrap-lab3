@@ -1,0 +1,21 @@
+$grid-gutter-width:30px;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px+$grid-gutter-width,
+) ;
+
+$font-family-base: 'Source Sans Pro', sans-serif;
+$slick-font-path: "../fonts/";
+$slick-dot-color:white;
+$slick-dot-color-active: $slick-dot-color;
+$slick-dot-size: 8px;
+
+
+$primary:#008ed6;
+$primary-dark:#15141a;
+
+$hr-border-color:#e0e0e0;
+$slick-loader-path: "../img/";
+$navbar-dark-color:white;

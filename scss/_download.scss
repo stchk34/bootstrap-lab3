@@ -1,0 +1,76 @@
+.download {
+    background-color: $primary-dark;
+    height: 100%;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.3;
+    color: $white;
+    padding: 10px 0;
+    &-bold {
+        letter-spacing: 0.46px;
+        font-weight: 500;
+    }
+    &-light {
+        font-weight: 100;
+        letter-spacing: 0.1px;
+    }
+    @include media-breakpoint-up(xl) {
+        padding-top: 58px;
+        font-size: 2.26rem;
+        text-align: left;
+    }
+}
+
+.download-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        line-height: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $primary;
+            transition: 0.5s;
+        }
+    }
+    @include media-breakpoint-up(xl) {
+        display: flex;
+        justify-content: flex-end;
+        padding: 2px 0 50px;
+    }
+    &__apply {
+        background-color: $primary;
+        box-shadow: 0px 0px 3px 0px rgba(3, 3, 3, 0.1);
+        width: 160px;
+        height: 50px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 20px;
+        &:hover {
+            color: $primary-dark;
+            transition: 0.3s;
+        }
+    }
+
+    &__view {
+        width: 160px;
+        height: 50px;
+        border: 0.5px solid grey;
+        border-radius: 4px;
+        cursor: pointer;
+        @include media-breakpoint-down(md) {
+            margin-left: 10px;
+        }
+    }
+}
+.row {
+    row-gap: 25px;
+}

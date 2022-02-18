@@ -1,0 +1,135 @@
+.features-slider {
+  padding: 63px 0 54px 0;
+  @include media-breakpoint-down(md) {
+    padding: 22px 0 11px 0;
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 21px;
+    color: #1a1a1a;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    padding-top: 32px;
+  }
+  &__paragraph {
+    font-size: 18px;
+    padding: 15px 20px;
+    line-height: 26px;
+    color: #999999;
+    margin: 0;
+    text-align: center;
+  }
+  &-img {
+    margin: 0 auto;
+  }
+}
+.features-circle {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.features-title {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 44px;
+  @include media-breakpoint-down(md) {
+    padding-top: 0px;
+  }
+
+  &__primary {
+    font-size: 14px;
+    line-height: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $primary;
+    margin: 1px 0 -11px;
+  }
+
+  &__secondary {
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    color: #1a1a1a;
+    padding-bottom: 28px;
+    margin: 0;
+    @include media-breakpoint-down(md) {
+      font-size: 28px;
+    }
+  }
+}
+
+.features-screen {
+  display: flex;
+  flex-direction: column;
+  padding-right: 23px;
+}
+
+.features-text {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 5px;
+}
+
+.features-customizable {
+  display: flex;
+  flex-direction: column;
+  padding-right: 9px;
+
+  &__secondary {
+    font-size: 18px;
+    padding: 16px 21px 0 20px;
+    line-height: 26px;
+    color: #999999;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.features-mobile {
+  display: flex;
+  flex-direction: column;
+  padding-left: 18px;
+
+  &__lesser {
+    font-size: 18px;
+    padding: 15px 20px 0 21px;
+    line-height: 26px;
+    color: #999999;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.slick-dots {
+  bottom: -16px;
+  li {
+      list-style: none;
+      border-radius: 50%;
+      font-size: 0;
+      width: 7px;
+      height: 7px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      margin: 0px -2px -6px 24px;
+      color:#1a1a1a;
+      &.slick-active {
+          background-color: $white;
+          width: 12px;
+          height: 12px;
+          transition: 0.3s;
+      }
+  }
+}

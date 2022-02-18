@@ -1,0 +1,32 @@
+.footer {
+    background-color: $primary-dark;
+}
+.footer-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 52px 0 13px -6px;
+
+    &__link {
+        margin: 0px 36px 0px -3px;
+        transition: color 200ms ease;
+        color: #444348;
+        font-size: 19px;
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #444348;
+    margin-bottom: 20px;
+    margin-top: -6px;
+}

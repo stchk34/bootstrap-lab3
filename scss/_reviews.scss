@@ -1,0 +1,137 @@
+.review {
+    background-image: url(../img/slider/background_slick.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.review-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 0 86px 0;
+    @include media-breakpoint-down(md) {
+        padding: 21px 0 43px 0;
+    }
+    &__secondary {
+        font-size: 14px;
+        line-height: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: $primary;
+    }
+
+    &__primary {
+        font-size: 36px;
+        font-weight: 600;
+        color: $white;
+        margin-top: -10px;
+        margin-bottom: 22px;
+    }
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 79px;
+    margin-right: 3px;
+}
+
+.review-slider {
+    &__content {
+        padding-bottom: 131px;
+        padding-left: 16px;
+        @include media-breakpoint-down(md) {
+            padding-bottom: 42px;
+        }
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 32px;
+        color: $white;
+        font-style: italic;
+        margin: 0px 26px 17px -2px;
+        @include media-breakpoint-down(md) {
+            margin: -4px 0px 20px 16px;
+        }
+    }
+
+    &__legoavatar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @include media-breakpoint-down(md) {
+            justify-content: center;
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 13px;
+        padding-left: 25px;
+    }
+
+    &__name {
+        line-height: 41px;
+        color: $white;
+        margin: 0;
+    }
+
+    &__job {
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: -2px;
+        font-weight: 700;
+        color: $white;
+    }
+}
+
+.review-avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 16px 0 0 -1px;
+    @include media-breakpoint-down(md) {
+        margin: 16px 0 0 13px;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 12px;
+        padding-left: 25px;
+    }
+
+    &__name {
+        line-height: 41px;
+        color: $white;
+        margin: 0;
+    }
+
+    &__job {
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: -2px;
+        font-weight: 700;
+        color: $white;
+    }
+}
+
+.slick-dots {
+    bottom: -17px;
+    li {
+        list-style: none;
+        border-radius: 50%;
+        font-size: 0;
+        width: 7px;
+        height: 7px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin: 0px -2px -6px 24px;
+        &.slick-active {
+            background-color: $white;
+            width: 12px;
+            height: 12px;
+            transition: 0.3s;
+        }
+    }
+}
